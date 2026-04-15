@@ -1,0 +1,29 @@
+{
+  "name": "node-js-microservice",
+  "version": "1.0.0",
+  "description": "## 🚀 Overview This project is a production-grade microservices backend system built using Node.js. It simulates real-world scalable backend architecture used in fintech, SaaS, and social platforms.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run dev --prefix api-gateway\" \"npm run dev --prefix auth-service\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surya-2811/node-js-microservice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/surya-2811/node-js-microservice/issues"
+  },
+  "homepage": "https://github.com/surya-2811/node-js-microservice#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
