@@ -18,6 +18,9 @@ const authRoutes = require('./src/routes/authRoutes');
 app.use('/api/v1/auth', authRoutes);
 
 const PORT = process.env.PORT || 5001;
+const connectDB = require('./src/config/db');
+
+connectDB();
 
 app.listen(PORT, () => {
     console.log(`Auth Service running on ${PORT}`);
